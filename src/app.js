@@ -24,10 +24,8 @@ function generateDomain() {
   return arr;
 }
 
-for (let url of generateDomain()) {
-  document.getElementById("result").innerHTML += "<br>" + url;
-}
-
 function clickMe() {
-  alert("But for now, rest well and dream of large errors");
+  for (let url of generateDomain()) {
+    document.getElementById("result").innerHTML += "<br>" + url;
+  }
 }
